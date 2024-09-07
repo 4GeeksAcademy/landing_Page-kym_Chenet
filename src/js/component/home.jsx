@@ -1,6 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Jumbotron from "./Jumbotron";
+import List from "./List";
+import Cards from "../Cards";
+
+
 
 //include images into your bundle
 
