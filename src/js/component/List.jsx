@@ -1,16 +1,26 @@
-const List = [
-    {
-     id: 1,
-     title: "card title",
-     text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias minima similique labore nostrum corporis, porro optio nobis esse eligendi beatae quidem facere rem earum eveniet explicabo ad quod quia harum!"
+import React from "react";
+import Card from "./Card";
+import Cartitas from "../Cartitas";
 
-    },
+const List = (props) => {      
 
-    {   id: 2,
-        title: "card title",
-        text:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias minima similique labore nostrum corporis, porro optio nobis esse eligendi beatae quidem facere rem earum eveniet explicabo ad quod quia harum!"
-   
-       },
-]
+     return (   
+        <div> 
+             {props.cards.map((car,i) => {
+                 return ( 
+                    <Card  
+                    key={i}
+                    title={car.title}
+                    img= {car.img}
+                    descripcion = {car.descripcion}
+                    />
+                 )})}
+         </div>
+     
+    
+         )
+    
+    }
+ 
 
-export default List;
+export {List}

@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Jumbotron from "./Jumbotron";
-import List from "./List";
-import Cards from "../Cards";
+import { List } from "./List";
+import Cartitas from "../Cartitas";
+
 
 
 
@@ -13,8 +14,9 @@ const Home = () => {
 	return (
 		
 		<div className="text-center">
-			< Navbar />
-			<Jumbotron />
+			<Navbar></Navbar>
+			<Jumbotron></Jumbotron>
+			<List>{Cartitas}</List>
 		</div>
 	);
 };
